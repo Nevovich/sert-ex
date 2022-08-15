@@ -1,0 +1,24 @@
+header
+    & .navbar
+        &-nav 
+            // width: 100%
+
+.navbar
+    &-brand 
+        & img 
+            max-width: 211px
+    & .dropdown
+        &-menu 
+            padding: 0
+            margin: 0
+            border: 0
+        &-item 
+            padding: 0
+            color: $black
+            white-space: inherit
+            font-size: 12px
+            &:hover
+                color: $green
+                background-color: transparent
+            &::before
+                content: '• '

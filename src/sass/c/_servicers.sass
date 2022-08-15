@@ -1,0 +1,38 @@
+.services
+    &-item 
+        &-title 
+            color: $green
+    &-group
+        &-title
+            position: relative
+            display: flex
+            flex-direction: row
+            column-gap: 10px
+            align-items: center
+            color: $green
+            font-weight: 500
+            margin-bottom: 20px
+            &::after
+                content: ''
+                position: absolute
+                bottom: -12px
+                left: 0
+                width: 100%
+                height: 2px
+                background-color: $green
+            & img 
+                width: 43px
+    &-list 
+        padding-inline-start: 15px
+        & li 
+            list-style-type: none
+            position: relative
+            font-size: 12px
+            &::before
+                content: ''
+                background: $green
+                position: absolute
+                top: 6px
+                left: -13px
+                width: 4px
+                height: 4px
