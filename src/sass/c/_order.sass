@@ -6,14 +6,17 @@
     &-list 
     &-item 
         display: flex
-        align-items: center
-        column-gap: 10px      
+        align-items: center    
         font-size: 14px 
         &:nth-child(even)
             flex-direction: row-reverse
             text-align: right
+            & .order-counter
+                margin-left: 10px 
         &:nth-child(odd)
-            flex-direction: row    
+            flex-direction: row  
+            & .order-counter
+                margin-right: 10px 
     &-counter 
         text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
         font-size: 64px
