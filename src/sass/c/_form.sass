@@ -1,12 +1,12 @@
 .form
     &-text 
         &-block 
-            & span 
-                font-weight: bold
-                font-size: 26px
-            & p 
-                font-weight: 100
-                font-size: 14px
+        &-title 
+            font-weight: bold
+            font-size: 26px
+        &-subtitle 
+            font-weight: 100
+            font-size: 14px
     &-wrapper 
         border: 1px solid #EBEBEB
         border-radius: 8px
@@ -32,4 +32,32 @@ input
     outline: 0 !important
     &:not(:first-child)
         margin-top: 18px
-        
+
+
+@media (min-width: 992px )
+    .form
+        &-wrapper 
+            display: flex
+            padding: 45px 50px
+            &_sm 
+                padding: 17px 34px
+        &-text 
+            &-block       
+                max-width: 50%
+                padding-right: 15px
+            &-title  
+                font-size: 28px
+                &_big
+                    font-size: 36px
+            &-subtitle
+                margin-top: 20px
+                font-size: 18px
+                &_big
+                    margin-top: 30px
+                    font-size: 24px
+        &-btn 
+            &_sm 
+                padding: 17px 50px
+                font-size: 18px
+    input 
+        padding: 14px 20px
