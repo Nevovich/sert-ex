@@ -1,0 +1,77 @@
+.example
+    &-block 
+        &-image 
+            position: relative
+            margin-bottom: 53px
+            & img 
+                width: 100%
+                max-width: 510px
+            &::before
+                content: ''
+                width: calc(100%  - 30px )
+                height: 2px
+                background-color: $green
+                position: absolute
+                bottom: -23px
+                right: 15px
+        &-text 
+            & p 
+                font-size: 14px
+            & .warning-block 
+                border: 2px dashed $black
+                border-radius: 8px
+                padding: 20px 10px
+                &-title 
+                    font-weight: bold
+                    margin-left: 10px
+                    font-size: 14px
+                    text-transform: uppercase
+                & img 
+                    width: 60px
+
+@media (min-width: 768px )      
+    .example
+        &-block 
+            &-image 
+                margin-bottom: 0
+                display: flex
+                align-items: center
+                justify-content: center
+                &::before         
+                    display: none     
+
+
+@media (min-width: 992px )      
+    .example
+        &-block 
+            &-image 
+                & img 
+                    max-width: 390px
+                &::before         
+                    display: block 
+                    height: 100%
+                    width: 2px
+                    right: -23px
+                    top: 0
+            &-text 
+                padding-left: 70px     
+                display: flex
+                flex-direction: column
+                justify-content: center          
+@media (min-width: 1200px )      
+    .example
+        &-block 
+            &-image     
+            &-text 
+                & p 
+                    font-size: 22px
+                & .warning-block 
+                    padding: 40px 27px
+                    display: flex
+                    margin-top: 40px
+                    &-title 
+                        font-size: 22px
+                        margin-left: 0
+                    & img 
+                        max-width: 450px
+                    
