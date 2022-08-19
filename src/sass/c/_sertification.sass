@@ -1,0 +1,93 @@
+.sertification
+    &-title 
+        &-block 
+            font-size: 14px
+            margin-top: 20px
+            & span 
+                text-transform: uppercase
+                font-weight: 500
+            & p 
+                margin-top: 10px
+        &-img 
+            width: 100%
+.question
+    &-list
+        & li
+            font-weight: normal
+            margin-bottom: 35px
+            & span
+            &::before
+                background: none
+            &:not(:last-child)::after
+                width: 100%
+                height: 1px
+                content: ''
+                background-color: $green
+                position: absolute
+                bottom: -25px
+                left: -7.5px
+    &-item 
+        display: flex
+        flex-direction: row
+        align-items: center
+        &-icon
+            font-size: 96px
+            color: #DCDCDC
+            margin-right: 15px
+        &-title 
+            font-size: 16px
+.testing
+    &-text 
+        & p 
+            font-size: 14px
+        &-title 
+            font-weight: 500
+    &-subtitle 
+        font-size: 16px
+        text-transform: uppercase
+
+
+@media (min-width: 768px )
+    .sertification
+        &-title 
+            &-block 
+                font-size: 22px
+    .testing
+        &-text 
+            font-size: 18px
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &-section 
+            & .uslugi_reglaments
+                &-row
+                    flex-direction: row
+                &-img
+                    display: flex
+                    justify-content: end
+                    align-items: center
+        &-subtitle 
+            font-size: 20px
+@media (min-width: 992px )
+    .question
+        &-item 
+            &-icon
+                font-size: 180px
+                margin-right: 25px
+            &-title 
+                font-size: 30px
+
+@media (min-width: 1200px )
+    .sertification
+        &-title 
+            &-block
+                padding: 17px
+                margin-top: 0
+                background: rgba(255, 255, 255, 0.91)
+                backdrop-filter: blur(21px)
+                border-radius: 34px
+                position: absolute
+                bottom: 14px
+                right: 30px
+                width: 880px
+                z-index: 20

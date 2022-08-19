@@ -24,18 +24,10 @@ $( document ).ready(function() {
     if ($(window).width() > 1199) {
         // Header part
         warningBlockTitle = $('.warning-block-title')
-        // infoBlock = $( "header #navbar-info" )
-        // navbarMenu = $( "header #navbar-links" )
         bigParent = $('.warning-block-text')
-        // headerContacts = $('header .header-contacts')
         // Removing
         warningBlockTitle.remove()
-        // navbarMenu.remove()
-        // headerContacts.remove()
-        // $( "header #navbarSupportedContent" ).remove()
         bigParent.prepend(warningBlockTitle)
-        // bigParent.append(infoBlock)
-        // bigParent.append(headerContacts)
     };
 
     $('.about-slider').owlCarousel({
