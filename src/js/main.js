@@ -33,6 +33,8 @@ $( document ).ready(function() {
     $('.about-slider').owlCarousel({
         margin:10,
         nav:true,
+        autoplay:true,
+        autoplayTimeout: 5000,
         items: 1,
         navText:['<span class="owi-custom"><img src="img/about/slider/back.svg"></span>', '<span class="owi-custom"><img src="img/about/slider/next.svg"></span>'],
         dots: false
@@ -40,6 +42,8 @@ $( document ).ready(function() {
     $('.docs-slider').owlCarousel({
         margin:10,
         nav:true,
+        autoplay:true,
+        autoplayTimeout: 5000,
         navText:['<span class="owi-custom"><img src="img/about/slider/back.svg"></span>', '<span class="owi-custom"><img src="img/about/slider/next.svg"></span>'],
         responsive:{
             0:{
